@@ -5,9 +5,7 @@
     <title>Tomer Einhorn's JS task for Vidazoo</title>
     <script>
       function changeid() {
-        var iframe = document.getElementById('iframeId');
-        var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-        var IdDiv = innerDoc.getElementById("myDiv");
+        var IdDiv = document.getElementById('iframeID').contentWindow.document.getElementById('myDiv');
         IdDiv.id = "myDiv2";
       }
 
