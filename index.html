@@ -11,6 +11,8 @@
         if (IdDiv.id == "myDiv"){
           IdDiv.id = "myDiv2";
         }
+        document.getElementById("myButton").disabled = true;
+        alert("div id changed!");
       }
 
     </script>
@@ -20,7 +22,7 @@
   <body>
 
     <h1>JS Task - Tomer Einhorn</h1>
-    <button onclick="changeid()">Click here</button>
+    <input type="button" id="myButton" value="Click Here To change Div id" onclick="changeid()"/>
     <iframe id="iframeId" name="iframe" width="100%" height="300" src="https://tomereinhorn.github.io/VidazooIframe/" allowpaymentrequest frameborder="0"></iframe>
   </body>
 
