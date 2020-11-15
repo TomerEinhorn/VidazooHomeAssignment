@@ -11,6 +11,8 @@
         if (IdDiv.id == "myDiv"){
           IdDiv.innerHTML = IdDiv.id;
           IdDiv.id = "myDiv2";
+          var message = "after clicking, div id is "
+          document.write(message);
           IdDiv.innerHTML = IdDiv.id;
         }
         document.getElementById("myButton").disabled = true;
