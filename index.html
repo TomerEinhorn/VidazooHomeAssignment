@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-  <head onload="printOrigId()">
+  <head>
     <title>Tomer Einhorn's JS task for Vidazoo</title>
     <script>
       function changeid() {
@@ -18,7 +18,19 @@
         alert("div id changed!");
       }
       
-            function printOrigId() {
+
+    </script>
+
+  </head>
+
+  <body  onload="printOrigId()">
+
+    <h1>JS Task - Tomer Einhorn</h1>
+    <input type="button" id="myButton" value="Click Here To change Div id" onclick="changeid()"/>
+    <iframe id="iframeId" name="iframe" width="100%" height="300" src="https://tomereinhorn.github.io/VidazooIframe/" allowpaymentrequest frameborder="0"></iframe>
+    
+    <script>
+         function printOrigId() {
         var iframe = document.getElementById('iframeId');
         var innerDoc = iframe.contentDocument
         var IdDiv = innerDoc.getElementById("myDiv");
@@ -26,16 +38,7 @@
           var message = "Before clicking, div id is "
           IdDiv.innerHTML = message + IdDiv.id;
       }
-
     </script>
-
-  </head>
-
-  <body>
-
-    <h1>JS Task - Tomer Einhorn</h1>
-    <input type="button" id="myButton" value="Click Here To change Div id" onclick="changeid()"/>
-    <iframe id="iframeId" name="iframe" width="100%" height="300" src="https://tomereinhorn.github.io/VidazooIframe/" allowpaymentrequest frameborder="0"></iframe>
   </body>
 
 </html>
