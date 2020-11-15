@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+  <head onload="printOrigId()">
     <title>Tomer Einhorn's JS task for Vidazoo</title>
     <script>
       function changeid() {
@@ -10,13 +10,21 @@
         var IdDiv = innerDoc.getElementById("myDiv");
         if (IdDiv.id == "myDiv"){
           IdDiv.style = "background-color: pink; border:  5px outset green; text-align: center"
-          IdDiv.innerHTML = IdDiv.id;
           IdDiv.id = "myDiv2";
           var message = "After clicking, div id is "
           IdDiv.innerHTML = message + IdDiv.id;
         }
         document.getElementById("myButton").disabled = true;
         alert("div id changed!");
+      }
+      
+            function printOrigId() {
+        var iframe = document.getElementById('iframeId');
+        var innerDoc = iframe.contentDocument
+        var IdDiv = innerDoc.getElementById("myDiv");
+
+          var message = "Before clicking, div id is "
+          IdDiv.innerHTML = message + IdDiv.id;
       }
 
     </script>
