@@ -12,8 +12,8 @@
           IdDiv.style = "background-color: pink; border:  5px outset green; text-align: center"
           IdDiv.innerHTML = IdDiv.id;
           IdDiv.id = "myDiv2";
-          var message = "after clicking, div id is "
-          IdDiv.innerHTML=message;
+          var message = "After clicking, div id is "
+          IdDiv.innerHTML = message + IdDiv.id;
         }
         document.getElementById("myButton").disabled = true;
         alert("div id changed!");
