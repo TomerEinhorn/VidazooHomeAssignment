@@ -8,9 +8,13 @@
         var iframe = document.getElementById('iframeId');
         var innerDoc = iframe.contentDocument
         var IdDiv = innerDoc.getElementById("myDiv");
-        console.log(IdDiv);
+        var message = "before clicking, idDiv is equal to ";
+        document.write (message);
+        document.write (IdDiv);
+        var message2 = "after clicking, idDiv is equal to ";
         IdDiv.id = "myDiv2";
-        console.log(IdDiv);
+        document.write (message2);
+        document.write (IdDiv);
       }
 
     </script>
