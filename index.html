@@ -13,8 +13,7 @@
           IdDiv.innerHTML = IdDiv.id;
           IdDiv.id = "myDiv2";
           var message = "after clicking, div id is "
-          IdDiv.write(message);
-          IdDiv.write(IdDiv.id);
+          IdDiv.innerHTML=message;
         }
         document.getElementById("myButton").disabled = true;
         alert("div id changed!");
